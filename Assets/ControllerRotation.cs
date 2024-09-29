@@ -18,8 +18,6 @@ public class ControllerRotation : MonoBehaviour
 
     void Update()
 	{
-		//test
-
 		ControllerAim();
 
 		crosshair.transform.position = gameObject.transform.position;
