@@ -1,0 +1,34 @@
+{
+    "name": "Crosshair_Rotation",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "f039aa6d-4dd8-41c6-b859-a10ba29338aa",
+            "actions": [
+                {
+                    "name": "Rotate",
+                    "type": "Value",
+                    "id": "13ac3223-b443-4159-8458-f6e23e08e544",
+                    "expectedControlType": "Stick",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "69fdc768-e533-4599-b394-4dae9651abe8",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
