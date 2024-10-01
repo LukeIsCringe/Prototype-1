@@ -29,19 +29,26 @@ public class ControllerRotation : MonoBehaviour
 
     private void OnEnable()
     {
-		playerInput.actions["SwitchActionMap"].performed += SwitchActionMap;
-    }
+		playerInput.actions["SwitchActionMapMnK"].performed += SwitchActionMapMnK;
+		playerInput.actions["SwitchActionMapGamepad"].performed += SwitchActionMapGamepad;
+	}
 
 	private void OnDisable()
 	{
-		playerInput.actions["SwitchActionMap"].performed -= SwitchActionMap;
+		playerInput.actions["SwitchActionMapMnK"].performed -= SwitchActionMapMnK;
+		playerInput.actions["SwitchActionMapGamepad"].performed -= SwitchActionMapGamepad;
 	}
 
 
-	private void SwitchActionMap(InputAction.CallbackContext context)
+	private void SwitchActionMapMnK(InputAction.CallbackContext context)
     {
 		playerInput.SwitchCurrentActionMap("GamePad");
     }
+
+	private void SwitchActionMapGamepad(InputAction.CallbackContext context)
+	{
+		playerInput.SwitchCurrentActionMap("MnK");
+	}
 
 	void Update()
 	{

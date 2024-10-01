@@ -65,13 +65,13 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""SwitchActionMap"",
-                    ""type"": ""Button"",
+                    ""name"": ""SwitchActionMapMnK"",
+                    ""type"": ""Value"",
                     ""id"": ""e19974eb-2cb4-4df5-804d-c68af6bbf65d"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -198,23 +198,56 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""6954cc2d-0a32-44c2-b712-e98f2d4a2bd5"",
-                    ""path"": ""<Keyboard>/e"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SwitchActionMap"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""3ce68d30-0a7a-4d76-a011-18092f960de2"",
                     ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fb2ab453-3620-4b27-903d-e8cab5581356"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""SwitchActionMapMnK"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""27503735-7879-4627-80cc-f46fe524cafa"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""SwitchActionMapMnK"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""193983ae-5f5a-4474-8879-20c857439dff"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""SwitchActionMapMnK"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""29b2096e-ab7e-4eb0-938f-0821b83837ef"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""SwitchActionMapMnK"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -259,6 +292,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SwitchActionMapGamepad"",
+                    ""type"": ""Value"",
+                    ""id"": ""8cdd7351-7890-49a6-93c5-3d73a85c3d41"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -307,13 +349,134 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""aeec55f0-979f-4487-866b-54eaaf146515"",
-                    ""path"": ""<Keyboard>/rightBracket"",
+                    ""name"": ""WASD"",
+                    ""id"": ""02fa47b6-2bb8-43a3-9dc9-7b7f31fe5f0e"",
+                    ""path"": ""Dpad"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SwitchActionMapGamepad"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""028234a4-e3d5-4790-ae72-c4c098010a6d"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Jump"",
+                    ""action"": ""SwitchActionMapGamepad"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""99f972b5-aa15-4b35-abe1-236972fce149"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SwitchActionMapGamepad"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""8df161b0-88d6-4e8c-8a9e-ab80a57d3d08"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SwitchActionMapGamepad"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""20f60388-9a32-4b16-83f3-9ce6e5a9de5f"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SwitchActionMapGamepad"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""dec1f25b-e55c-4e57-932e-cf0e7473f220"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SwitchActionMapGamepad"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""17a9826b-2790-4489-ac95-dcf3d0e13c72"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SwitchActionMapGamepad"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""be3c2222-41d3-4dbf-a4b9-c3a3abacf78e"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SwitchActionMapGamepad"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""263aacdb-eca1-48e5-a0ed-4bcf06e81cb5"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SwitchActionMapGamepad"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0245a47f-805d-4d53-bb04-3572990cfb9c"",
+                    ""path"": ""<Pointer>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse;Touch"",
+                    ""action"": ""SwitchActionMapGamepad"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""74473900-6336-48f7-b56b-e4931bc66eb6"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SwitchActionMapGamepad"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""efeee6f3-4b91-436b-9359-3a51b7f5269f"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SwitchActionMapGamepad"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -389,13 +552,14 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_MnK_Look = m_MnK.FindAction("Look", throwIfNotFound: true);
         m_MnK_Fire = m_MnK.FindAction("Fire", throwIfNotFound: true);
         m_MnK_Jump = m_MnK.FindAction("Jump", throwIfNotFound: true);
-        m_MnK_SwitchActionMap = m_MnK.FindAction("SwitchActionMap", throwIfNotFound: true);
+        m_MnK_SwitchActionMapMnK = m_MnK.FindAction("SwitchActionMapMnK", throwIfNotFound: true);
         // Gamepad
         m_Gamepad = asset.FindActionMap("Gamepad", throwIfNotFound: true);
         m_Gamepad_Move = m_Gamepad.FindAction("Move", throwIfNotFound: true);
         m_Gamepad_Look = m_Gamepad.FindAction("Look", throwIfNotFound: true);
         m_Gamepad_Fire = m_Gamepad.FindAction("Fire", throwIfNotFound: true);
         m_Gamepad_Jump = m_Gamepad.FindAction("Jump", throwIfNotFound: true);
+        m_Gamepad_SwitchActionMapGamepad = m_Gamepad.FindAction("SwitchActionMapGamepad", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
@@ -467,7 +631,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_MnK_Look;
     private readonly InputAction m_MnK_Fire;
     private readonly InputAction m_MnK_Jump;
-    private readonly InputAction m_MnK_SwitchActionMap;
+    private readonly InputAction m_MnK_SwitchActionMapMnK;
     public struct MnKActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -476,7 +640,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         public InputAction @Look => m_Wrapper.m_MnK_Look;
         public InputAction @Fire => m_Wrapper.m_MnK_Fire;
         public InputAction @Jump => m_Wrapper.m_MnK_Jump;
-        public InputAction @SwitchActionMap => m_Wrapper.m_MnK_SwitchActionMap;
+        public InputAction @SwitchActionMapMnK => m_Wrapper.m_MnK_SwitchActionMapMnK;
         public InputActionMap Get() { return m_Wrapper.m_MnK; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -498,9 +662,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
-            @SwitchActionMap.started += instance.OnSwitchActionMap;
-            @SwitchActionMap.performed += instance.OnSwitchActionMap;
-            @SwitchActionMap.canceled += instance.OnSwitchActionMap;
+            @SwitchActionMapMnK.started += instance.OnSwitchActionMapMnK;
+            @SwitchActionMapMnK.performed += instance.OnSwitchActionMapMnK;
+            @SwitchActionMapMnK.canceled += instance.OnSwitchActionMapMnK;
         }
 
         private void UnregisterCallbacks(IMnKActions instance)
@@ -517,9 +681,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
-            @SwitchActionMap.started -= instance.OnSwitchActionMap;
-            @SwitchActionMap.performed -= instance.OnSwitchActionMap;
-            @SwitchActionMap.canceled -= instance.OnSwitchActionMap;
+            @SwitchActionMapMnK.started -= instance.OnSwitchActionMapMnK;
+            @SwitchActionMapMnK.performed -= instance.OnSwitchActionMapMnK;
+            @SwitchActionMapMnK.canceled -= instance.OnSwitchActionMapMnK;
         }
 
         public void RemoveCallbacks(IMnKActions instance)
@@ -545,6 +709,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Gamepad_Look;
     private readonly InputAction m_Gamepad_Fire;
     private readonly InputAction m_Gamepad_Jump;
+    private readonly InputAction m_Gamepad_SwitchActionMapGamepad;
     public struct GamepadActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -553,6 +718,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         public InputAction @Look => m_Wrapper.m_Gamepad_Look;
         public InputAction @Fire => m_Wrapper.m_Gamepad_Fire;
         public InputAction @Jump => m_Wrapper.m_Gamepad_Jump;
+        public InputAction @SwitchActionMapGamepad => m_Wrapper.m_Gamepad_SwitchActionMapGamepad;
         public InputActionMap Get() { return m_Wrapper.m_Gamepad; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -574,6 +740,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
+            @SwitchActionMapGamepad.started += instance.OnSwitchActionMapGamepad;
+            @SwitchActionMapGamepad.performed += instance.OnSwitchActionMapGamepad;
+            @SwitchActionMapGamepad.canceled += instance.OnSwitchActionMapGamepad;
         }
 
         private void UnregisterCallbacks(IGamepadActions instance)
@@ -590,6 +759,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
+            @SwitchActionMapGamepad.started -= instance.OnSwitchActionMapGamepad;
+            @SwitchActionMapGamepad.performed -= instance.OnSwitchActionMapGamepad;
+            @SwitchActionMapGamepad.canceled -= instance.OnSwitchActionMapGamepad;
         }
 
         public void RemoveCallbacks(IGamepadActions instance)
@@ -658,7 +830,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         void OnLook(InputAction.CallbackContext context);
         void OnFire(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
-        void OnSwitchActionMap(InputAction.CallbackContext context);
+        void OnSwitchActionMapMnK(InputAction.CallbackContext context);
     }
     public interface IGamepadActions
     {
@@ -666,5 +838,6 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         void OnLook(InputAction.CallbackContext context);
         void OnFire(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnSwitchActionMapGamepad(InputAction.CallbackContext context);
     }
 }
