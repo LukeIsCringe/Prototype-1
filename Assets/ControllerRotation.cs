@@ -6,20 +6,25 @@ using UnityEngine.InputSystem.Users;
 
 public class ControllerRotation : MonoBehaviour
 {
-	public GameObject Object;
+	//Controller Aim Stuff + Crosshair
 	[SerializeField] Vector2 GameobjectRotation;
 	[SerializeField] private float GameobjectRotation2;
 	[SerializeField] private float GameobjectRotation3;
 
+	public GameObject gamepadCrosshair;
+	public GameObject mouseCrosshair;
+
 	public bool FacingRight = true;
 
-	public GameObject crosshair;
+	
 	private PlayerInput playerInput;
-	private InputActionAsset inputAction;
-	private InputAction testAction;
 
-	public bool controlSwap = false;
+	public bool gamepadActive;
 
+    private void Start()
+    {
+		gamepadActive = false;
+	}
 
     private void Awake()
     {
@@ -43,17 +48,33 @@ public class ControllerRotation : MonoBehaviour
 	private void SwitchActionMapMnK(InputAction.CallbackContext context)
     {
 		playerInput.SwitchCurrentActionMap("GamePad");
+		gamepadActive = true;
+
     }
 
 	private void SwitchActionMapGamepad(InputAction.CallbackContext context)
 	{
 		playerInput.SwitchCurrentActionMap("MnK");
+		gamepadActive = false;
 	}
 
 	void Update()
 	{
-		ControllerAim();
-		crosshair.transform.position = gameObject.transform.position;
+        if(gamepadActive)
+		{
+			ControllerAim();
+			gamepadCrosshair.GetComponent<SpriteRenderer>().enabled = true;
+			mouseCrosshair.GetComponent<SpriteRenderer>().enabled = false;
+		}
+
+        if (!gamepadActive)
+        {
+			mouseCrosshair.GetComponent<SpriteRenderer>().enabled = true;
+			gamepadCrosshair.GetComponent<SpriteRenderer>().enabled = false;
+		}
+
+
+		gamepadCrosshair.transform.position = gameObject.transform.position;
 	}
 	public void Flip()
 	{
@@ -71,13 +92,13 @@ public class ControllerRotation : MonoBehaviour
 		{
 			//Rotates the object if the player is facing right
 			GameobjectRotation2 = GameobjectRotation.x + GameobjectRotation.y * 90;
-			Object.transform.rotation = Quaternion.Euler(0f, 0f, GameobjectRotation2);
+			gamepadCrosshair.transform.rotation = Quaternion.Euler(0f, 0f, GameobjectRotation2);
 		}
 		else
 		{
 			//Rotates the object if the player is facing left
 			GameobjectRotation2 = GameobjectRotation.x + GameobjectRotation.y * -90;
-			Object.transform.rotation = Quaternion.Euler(0f, 180f, -GameobjectRotation2);
+			gamepadCrosshair.transform.rotation = Quaternion.Euler(0f, 180f, -GameobjectRotation2);
 		}
 		if (GameobjectRotation3 < 0 && FacingRight)
 		{
