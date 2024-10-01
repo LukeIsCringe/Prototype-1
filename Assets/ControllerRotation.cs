@@ -49,7 +49,6 @@ public class ControllerRotation : MonoBehaviour
     {
 		playerInput.SwitchCurrentActionMap("GamePad");
 		gamepadActive = true;
-
     }
 
 	private void SwitchActionMapGamepad(InputAction.CallbackContext context)
@@ -63,12 +62,17 @@ public class ControllerRotation : MonoBehaviour
         if(gamepadActive)
 		{
 			ControllerAim();
+
+			Cursor.visible = false;
+
 			gamepadCrosshair.GetComponent<SpriteRenderer>().enabled = true;
 			mouseCrosshair.GetComponent<SpriteRenderer>().enabled = false;
 		}
 
         if (!gamepadActive)
         {
+			Cursor.visible = true;
+
 			mouseCrosshair.GetComponent<SpriteRenderer>().enabled = true;
 			gamepadCrosshair.GetComponent<SpriteRenderer>().enabled = false;
 		}
