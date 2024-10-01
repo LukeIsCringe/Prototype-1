@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Users;
 
 public class ControllerRotation : MonoBehaviour
 {
@@ -13,13 +14,38 @@ public class ControllerRotation : MonoBehaviour
 	public bool FacingRight = true;
 
 	public GameObject crosshair;
+	private PlayerInput playerInput;
+	private InputActionAsset inputAction;
+	private InputAction testAction;
 
-	public PlayerInput currentControlScheme;
+	public bool controlSwap = false;
 
-    void Update()
+
+    private void Awake()
+    {
+		playerInput = GetComponent<PlayerInput>();
+		
+    }
+
+    private void OnEnable()
+    {
+		playerInput.actions["SwitchActionMap"].performed += SwitchActionMap;
+    }
+
+	private void OnDisable()
+	{
+		playerInput.actions["SwitchActionMap"].performed -= SwitchActionMap;
+	}
+
+
+	private void SwitchActionMap(InputAction.CallbackContext context)
+    {
+		playerInput.SwitchCurrentActionMap("GamePad");
+    }
+
+	void Update()
 	{
 		ControllerAim();
-
 		crosshair.transform.position = gameObject.transform.position;
 	}
 	public void Flip()

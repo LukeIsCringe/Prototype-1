@@ -775,7 +775,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   speed: 8
-  jumpForce: 8
+  jumpForce: 10
   player: {fileID: 2061955300}
 --- !u!114 &2061955310
 MonoBehaviour:
@@ -795,6 +795,7 @@ MonoBehaviour:
   GameobjectRotation3: 0
   FacingRight: 1
   crosshair: {fileID: 1151691210}
+  controlSwap: 0
 --- !u!114 &2061955311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -807,7 +808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: ac8271ae5c7ae2e4f845c91587c081e0, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: c3757cff95ee2834bb282a943d35d721, type: 3}
   m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -834,24 +835,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: d7eb2245-caed-426c-abd3-ac9e30f05914
-    m_ActionName: 'Player/Move[/DualSenseGamepadHID/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
+    m_ActionId: 25731e5d-4fa4-40a2-97ae-9108a9ed6a59
+    m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2061955310}
-        m_TargetAssemblyTypeName: ControllerRotation, Assembly-CSharp
-        m_MethodName: StickRotate
-        m_Mode: 0
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 5bf868ba-924f-4efb-a987-41bed335b081
-    m_ActionName: 'Player/Rotate[/DualSenseGamepadHID/rightStick,/Mouse/delta]'
+    m_ActionId: ba167700-b05c-49f6-96e1-a6f4162d6be6
+    m_ActionName: 'Player/Look[/Mouse/delta]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2061955308}
@@ -866,8 +867,56 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: c60da021-c1e4-4af8-bdc2-1d6933a67c5e
-    m_ActionName: 'Player/Fire[/DualSenseGamepadHID/rightTrigger,/Mouse/leftButton]'
+    m_ActionId: 9ccca258-897e-4d90-8d09-2b72d2d60b5b
+    m_ActionName: 'Player/Fire[/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2061955308}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e5098ccb-37ec-43f0-8d95-f5fe3541702b
+    m_ActionName: Gamepad/Move
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2061955310}
+        m_TargetAssemblyTypeName: ControllerRotation, Assembly-CSharp
+        m_MethodName: StickRotate
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 4586d868-b101-4b49-bf5c-8a17620c8c01
+    m_ActionName: Gamepad/Look
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2061955308}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: Fire
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 852a741f-e7c8-4d9e-a6da-042c69ce5d18
+    m_ActionName: Gamepad/Fire
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2061955308}
@@ -882,51 +931,43 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 88a5fbde-c2bd-457c-9e7f-2360eeacf0fa
-    m_ActionName: 'Player/Jump[/DualSenseGamepadHID/buttonSouth,/Keyboard/space]'
+    m_ActionId: 489fe0ad-07c9-4851-a7d9-db087a2063ca
+    m_ActionName: 'MnK/Jump[/Keyboard/space]'
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 318714df-231a-4b55-a091-14dfd7a7e1c1
-    m_ActionName: 'UI/Navigate[/DualSenseGamepadHID/leftStick/up,/DualSenseGamepadHID/rightStick/up,/DualSenseGamepadHID/leftStick/down,/DualSenseGamepadHID/rightStick/down,/DualSenseGamepadHID/leftStick/left,/DualSenseGamepadHID/rightStick/left,/DualSenseGamepadHID/leftStick/right,/DualSenseGamepadHID/rightStick/right,/DualSenseGamepadHID/dpad,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
+      m_Calls:
+      - m_Target: {fileID: 2061955310}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e19974eb-2cb4-4df5-804d-c68af6bbf65d
+    m_ActionName: 'MnK/SwitchActionMap[/Keyboard/e]'
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: fc14f56e-a640-4ca2-b197-a7c5270567b0
-    m_ActionName: 'UI/Submit[/Keyboard/enter,/DualSenseGamepadHID/buttonSouth]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 96430e90-15f4-4e7f-9881-7aea886e2480
-    m_ActionName: 'UI/Cancel[/Keyboard/escape,/DualSenseGamepadHID/buttonEast]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: a2aa35d8-7c10-4583-8f87-3f3fe36d2745
-    m_ActionName: 'UI/Point[/Mouse/position]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 2e586385-814a-415b-bd7b-ef7f9624b765
-    m_ActionName: 'UI/Click[/Mouse/leftButton]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: b584902d-d752-462c-91f6-be07583300c6
-    m_ActionName: 'UI/ScrollWheel[/Mouse/scroll]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 49c8f51c-9eef-4926-b3a9-0510ca3d5a98
-    m_ActionName: 'UI/MiddleClick[/Mouse/middleButton]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 3259218a-5fee-4cbb-89af-d5304660ccab
-    m_ActionName: 'UI/RightClick[/Mouse/rightButton]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: a0e7c5c1-5d01-4cae-9dcd-a558c1872ab8
-    m_ActionName: UI/TrackedDevicePosition
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 3e4e8a2f-c01b-4682-95e7-497d395c3c3a
-    m_ActionName: UI/TrackedDeviceOrientation
+      m_Calls:
+      - m_Target: {fileID: 2061955308}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: Jump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 3169a87e-b5cd-4e69-8b84-8cfe16b7a780
+    m_ActionName: 'Gamepad/Jump[/Keyboard/rightBracket]'
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
+  m_DefaultControlScheme: Keyboard&Mouse
+  m_DefaultActionMap: MnK
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
