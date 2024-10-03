@@ -10,7 +10,6 @@ public class ShootingScript : MonoBehaviour
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
-
     
     void Update()
     {
