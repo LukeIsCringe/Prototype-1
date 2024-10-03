@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4542392196011387421}
   - component: {fileID: 8376630196036443436}
   - component: {fileID: 6052914141319504991}
+  - component: {fileID: 557824263576039552}
   m_Layer: 6
   m_Name: GenerationEasy2
   m_TagString: Platforms
@@ -98,6 +99,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd94544c4ef037741ade907a2851d560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &557824263576039552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629559511119879110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e4b6e1d428136b4f9922e86741a00d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platManager: {fileID: 0}
 --- !u!1 &3865284131530711551
 GameObject:
   m_ObjectHideFlags: 0

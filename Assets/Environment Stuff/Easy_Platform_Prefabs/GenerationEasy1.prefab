@@ -412,6 +412,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8467968342691432884}
   - component: {fileID: 599142187941521409}
+  - component: {fileID: 6262363303833422759}
+  - component: {fileID: 4780475568086720913}
   m_Layer: 6
   m_Name: GenerationEasy1
   m_TagString: Platforms
@@ -488,6 +490,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 28.6, y: 14}
   m_EdgeRadius: 0
+--- !u!114 &6262363303833422759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3041736313652257151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd94544c4ef037741ade907a2851d560, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4780475568086720913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3041736313652257151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e4b6e1d428136b4f9922e86741a00d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platManager: {fileID: 0}
 --- !u!1 &3413586840202176635
 GameObject:
   m_ObjectHideFlags: 0
