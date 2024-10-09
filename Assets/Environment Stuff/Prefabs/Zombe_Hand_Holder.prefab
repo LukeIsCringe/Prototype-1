@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1747456091784966058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5008428634722943673}
+  m_Layer: 0
+  m_Name: Zombe_Hand_Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5008428634722943673
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747456091784966058}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16, y: 7.33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 312893554465226505}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3229771919456322216
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5008428634722943673}
+    m_Modifications:
+    - target: {fileID: 2919998823089667489, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919998823089667489, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919998823089667489, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919998823089667489, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919998823089667489, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919998823089667489, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919998823089667489, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919998823089667489, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919998823089667489, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919998823089667489, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147074698621026562, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+      propertyPath: m_Name
+      value: Zombie_Hand
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327218754648059157, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+      propertyPath: m_Size.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327218754648059157, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+      propertyPath: m_Size.y
+      value: 1.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327218754648059157, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2c1fa5945a6bb1841b34c83ea2c7200b, type: 3}
+    - target: {fileID: 4327218754648059157, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3147074698621026562, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 683556681065264814}
+  m_SourcePrefab: {fileID: 100100000, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+--- !u!4 &312893554465226505 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2919998823089667489, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+  m_PrefabInstance: {fileID: 3229771919456322216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &540101764244095914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3147074698621026562, guid: c0bff0d9c7813974e80765815f677ddc, type: 3}
+  m_PrefabInstance: {fileID: 3229771919456322216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &683556681065264814
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540101764244095914}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c86f80801e91d8e49b9917f66101cd85, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

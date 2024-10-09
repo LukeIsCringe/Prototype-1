@@ -8,11 +8,11 @@ public class PlatformsManager : MonoBehaviour
     public void Update()
     {
         speedIncrease();
-        Debug.Log(platformMoveSpeed);
+        //Debug.Log(platformMoveSpeed);
     }
 
     public void speedIncrease()
     {
-        platformMoveSpeed = platformMoveSpeed + speedIncrement;
+        platformMoveSpeed = platformMoveSpeed + (speedIncrement * Time.deltaTime);
     }
 }
