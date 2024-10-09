@@ -5,7 +5,7 @@ public class StartGame : MonoBehaviour
 {
     public void startGame()
     {
-        SceneManager.LoadScene("MainGame");
+        SceneManager.LoadScene("Main_Game");
     }
 }
 

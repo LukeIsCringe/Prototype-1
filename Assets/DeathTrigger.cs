@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathTrigger : MonoBehaviour
 {
@@ -6,7 +7,7 @@ public class DeathTrigger : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            Debug.Log("Dead");
+            SceneManager.LoadScene("Death_Screen");
         }
     }
 }

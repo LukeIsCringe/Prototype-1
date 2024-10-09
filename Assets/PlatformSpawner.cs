@@ -39,6 +39,11 @@ public class PlatformSpawner : MonoBehaviour
         {
             spawnRandom = Random.Range(2f, 5f);
         }
+
+        if (uiManager.Score > 3000)
+        {
+            spawnRandom = Random.Range(1f, 2f);
+        }
         
     }
 }

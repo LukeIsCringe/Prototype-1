@@ -5,6 +5,6 @@ public class restartGame : MonoBehaviour
 {
     public void resetGame()
     {
-        SceneManager.LoadScene("MainGame");
+        SceneManager.LoadScene("Main_Game");
     }
 }

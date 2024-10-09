@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2272247272641346657}
   - component: {fileID: 8418938378999767960}
   - component: {fileID: 7073117793299483420}
+  - component: {fileID: 6950154177713580651}
   m_Layer: 3
   m_Name: Floor
   m_TagString: Platforms
@@ -160,3 +161,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd94544c4ef037741ade907a2851d560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &6950154177713580651
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4398166292491796227}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: 011a32e915460694b8ab30ccecd69ec4, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
